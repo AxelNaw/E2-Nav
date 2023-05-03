@@ -10,7 +10,7 @@ a{
 
 header{
     display: flex;
-    height: 70px;
+    min-height: 70px;
     background-color: coral;
     justify-content: space-between;
     align-items: center;
@@ -29,5 +29,19 @@ header{
 
 nav a{
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 10px; 
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px;
+    }
 }
